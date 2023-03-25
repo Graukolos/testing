@@ -7,8 +7,8 @@ License:        BSD-3-Clause
 URL:            https://hyprland.org/
 Source:         https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.23.0beta.tar.gz        
 
-BuildRequires:  
-Requires:       
+BuildRequires:  xorg-x11-server-Xwayland-devel
+Requires:       xorg-x11-server-Xwayland
 
 %description
 
