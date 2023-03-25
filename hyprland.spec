@@ -1,11 +1,11 @@
 Name:           hyprland
-Version:        0.23.0
+Version:        v0.23.0beta
 Release:        %autorelease
 Summary:        Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
 
 License:        BSD-3-Clause
 URL:            https://hyprland.org/
-Source:         https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.23.0beta.tar.gz        
+Source:         https://github.com/hyprwm/Hyprland/archive/refs/tags/%{version}.tar.gz        
 
 BuildRequires:  xorg-x11-server-Xwayland-devel
 Requires:       xorg-x11-server-Xwayland
