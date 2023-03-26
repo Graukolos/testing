@@ -53,7 +53,8 @@ Static library and header files for the bundled wlroots
 %autosetup -n hyprland-source
 
 %build
-%meson -Dwlroots:xcb-errors=disabled -Dcpp_args=-DLEGACY_RENDERER
+export CXXFLAGS="$CXXFLAGS -DLEGACY_RENDERER"
+%meson -Dwlroots:xcb-errors=disabled
 %meson_build
 
 %install
