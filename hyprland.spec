@@ -5,7 +5,8 @@ Summary:        Dynamic tiling Wayland compositor that doesn't sacrifice on its 
 
 License:        BSD-3-Clause AND MIT AND BSD-2-Clause
 URL:            https://hyprland.org/
-Source:         https://github.com/hyprwm/Hyprland/releases/download/v0.23.0beta/source-%{version}.tar.gz        
+Source:         https://github.com/hyprwm/Hyprland/releases/download/v0.23.0beta/source-%{version}.tar.gz
+
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  meson
@@ -44,14 +45,12 @@ It supports multiple layouts, fancy effects, has a very flexible IPC model allow
 %prep
 %autosetup -n %{name}-source
 
-
 %build
 %meson -DLEGACY_RENDERER:BOOL=true -Dwlroots:xcb-errors=disabled
 %meson_build
 
 %install
 %meson_install
-
 
 %files
 %{_bindir}/Hyprland
@@ -61,6 +60,12 @@ It supports multiple layouts, fancy effects, has a very flexible IPC model allow
 %{_datadir}/hyprland
 %{_datadir}/wayland-sessions/hyprland.desktop
 
+%files devel
+%{_includedir}/wlr
+%{_datadir}/protocols/hyprland-toplevel-export-v1.xml
+%{_datadir}/pkgconfig/hyprland-protocols.pc
+%{_libdir}/pkgconfig/wlroots.pc
+%{_libdir}/libwlroots.a
+
 %changelog
-* Sat Mar 25 2023 Max Erdelmeier <graukolos@graukolos.tech>
 - 
