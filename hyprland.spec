@@ -12,6 +12,7 @@ BuildRequires:  gcc-c++
 BuildRequires:  meson
 BuildRequires:  jq
 BuildRequires:  git
+#BuildRequires:  cmake
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  pkgconfig(pixman-1)
@@ -24,6 +25,7 @@ BuildRequires:  pkgconfig(vulkan)
 BuildRequires:  pkgconfig(xcb-renderutil)
 BuildRequires:  pkgconfig(xcb-ewmh)
 BuildRequires:  pkgconfig(libliftoff)
+BuildRequires:  pkgconfig(libudev)
 BuildRequires:  glslang
 
 %description
