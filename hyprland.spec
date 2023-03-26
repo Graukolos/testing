@@ -27,6 +27,7 @@ BuildRequires:  pkgconfig(xcb-ewmh)
 BuildRequires:  pkgconfig(libliftoff)
 BuildRequires:  pkgconfig(libudev)
 BuildRequires:  pkgconfig(libseat)
+BuildRequires:  pkgconfig(hwdata)
 BuildRequires:  glslang
 
 %description
