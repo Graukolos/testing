@@ -1,9 +1,9 @@
 Name:           hyprland
 Version:        v0.23.0beta
 Release:        %autorelease
-Summary:        Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
+Summary:        Dynamic tiling Wayland compositor that doesn't sacrifice on its looks
 
-License:        BSD-3-Clause
+License:        BSD-3-Clause AND MIT AND BSD-2-Clause
 URL:            https://hyprland.org/
 Source:         https://github.com/hyprwm/Hyprland/releases/download/v0.23.0beta/source-%{version}.tar.gz        
 BuildRequires:  gcc
@@ -29,10 +29,15 @@ BuildRequires:  pkgconfig(libseat)
 BuildRequires:  pkgconfig(hwdata)
 BuildRequires:  pkgconfig(libdisplay-info)
 BuildRequires:  pkgconfig(libinput)
+BuildRequires:  pkgconfig(libliftoff)
+BuildRequires:  pkgconfig(xwayland)
 BuildRequires:  glslang
 
-%description
+Requires:       xorg-x11-server-Xwayland
 
+%description
+Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
+It supports multiple layouts, fancy effects, has a very flexible IPC model allowing for a lot of customization, and more.
 
 %prep
 %autosetup -n %{name}-source
