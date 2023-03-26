@@ -12,7 +12,7 @@ BuildRequires:  gcc-c++
 BuildRequires:  meson
 BuildRequires:  jq
 BuildRequires:  git
-#BuildRequires:  cmake
+BuildRequires:  cmake
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  pkgconfig(pixman-1)
@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(xcb-renderutil)
 BuildRequires:  pkgconfig(xcb-ewmh)
 BuildRequires:  pkgconfig(libliftoff)
 BuildRequires:  pkgconfig(libudev)
+BuildRequires:  pkgconfig(libseat)
 BuildRequires:  glslang
 
 %description
@@ -36,7 +37,7 @@ BuildRequires:  glslang
 
 
 %build
-%meson -DLEGACY_RENDERER:BOOL=true -Dwlroots:xcb-errors=disabled
+%meson -DLEGACY_RENDERER:BOOL=true -Dwlroots:xcb-errors=disabled -Dbuildtype=release
 %meson_build
 
 %install
