@@ -28,6 +28,7 @@ BuildRequires:  pkgconfig(libudev)
 BuildRequires:  pkgconfig(libseat)
 BuildRequires:  pkgconfig(hwdata)
 BuildRequires:  pkgconfig(libdisplay-info)
+BuildRequires:  pkgconfig(libinput)
 BuildRequires:  glslang
 
 %description
