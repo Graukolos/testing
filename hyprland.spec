@@ -37,7 +37,7 @@ BuildRequires:  glslang
 
 
 %build
-%meson -DLEGACY_RENDERER:BOOL=true -Dwlroots:xcb-errors=disabled -Dbuildtype=release
+%meson -DLEGACY_RENDERER:BOOL=true -Dwlroots:xcb-errors=disabled
 %meson_build
 
 %install
