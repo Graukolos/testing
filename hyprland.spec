@@ -10,6 +10,7 @@ Source:         https://github.com/hyprwm/Hyprland/releases/download/v0.23.0beta
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  meson
+BuildRequires:  jq
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  pkgconfig(pixman-1)
