@@ -1,4 +1,4 @@
-Name:           hyprland
+Name:           hyprland-legacyrenderer
 Version:        v0.23.0beta
 Release:        %autorelease
 Summary:        Dynamic tiling Wayland compositor that doesn't sacrifice on its looks
@@ -50,10 +50,10 @@ It supports multiple layouts, fancy effects, has a very flexible IPC model allow
 Static library and header files for the bundled wlroots
 
 %prep
-%autosetup -n %{name}-source
+%autosetup -n hyprland-source
 
 %build
-%meson -Dwlroots:xcb-errors=disabled
+%meson -DLEGACY_RENDERER:BOOL=true -Dwlroots:xcb-errors=disabled
 %meson_build
 
 %install
