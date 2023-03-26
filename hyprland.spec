@@ -39,10 +39,15 @@ Requires:       xorg-x11-server-Xwayland
 Requires:       cairo
 
 %package devel
+Summary:       Static library and header files for the bundled wlroots
+Conflicts:     wlroots-devel
 
 %description
 Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
 It supports multiple layouts, fancy effects, has a very flexible IPC model allowing for a lot of customization, and more.
+
+%description devel
+Static library and header files for the bundled wlroots
 
 %prep
 %autosetup -n %{name}-source
