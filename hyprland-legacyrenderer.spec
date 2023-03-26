@@ -37,6 +37,8 @@ BuildRequires:  glslang
 
 Requires:       xorg-x11-server-Xwayland
 Requires:       cairo
+Requires:       polkit
+Requires:       mesa-dri-drivers
 
 %package devel
 Summary:       Static library and header files for the bundled wlroots
