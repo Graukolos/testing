@@ -6,7 +6,6 @@ Summary:        Hyprland is a dynamic tiling Wayland compositor based on wlroots
 License:        BSD-3-Clause
 URL:            https://hyprland.org/
 Source:         https://github.com/hyprwm/Hyprland/releases/download/v0.23.0beta/source-%{version}.tar.gz        
-
 BuildRequires:  gcc
 BuildRequires:  gcc-c++
 BuildRequires:  meson
@@ -28,6 +27,7 @@ BuildRequires:  pkgconfig(libliftoff)
 BuildRequires:  pkgconfig(libudev)
 BuildRequires:  pkgconfig(libseat)
 BuildRequires:  pkgconfig(hwdata)
+BuildRequires:  pkgconfig(libdisplay-info)
 BuildRequires:  glslang
 
 %description
