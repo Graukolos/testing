@@ -31,9 +31,11 @@ BuildRequires:  pkgconfig(libdisplay-info)
 BuildRequires:  pkgconfig(libinput)
 BuildRequires:  pkgconfig(libliftoff)
 BuildRequires:  pkgconfig(xwayland)
+BuildRequires:  pkgconfig(cairo)
 BuildRequires:  glslang
 
 Requires:       xorg-x11-server-Xwayland
+Requires:       cairo
 
 %description
 Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
