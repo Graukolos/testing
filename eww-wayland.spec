@@ -8,6 +8,7 @@ URL:            https://github.com/elkowar/eww
 Source:         https://github.com/elkowar/eww/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  gcc
+BuildRequires:  pkgconfig(glib-2.0)
 
 %global debug_package %{nil}
 
