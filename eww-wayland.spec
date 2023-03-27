@@ -10,6 +10,7 @@ Source:         https://github.com/elkowar/eww/archive/refs/tags/v%{version}.tar
 BuildRequires:  gcc
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gdk-3.0)
+BuildRequires:  pkgconfig(gtk-layer-shell-0)
 
 %global debug_package %{nil}
 
