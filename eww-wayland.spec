@@ -5,7 +5,7 @@ Summary:        ELKowars wacky widgets
 
 License:        MIT
 URL:            https://github.com/elkowar/eww
-Source:         https://github.com/elkowar/eww/archive/refs/tags/eww-%{version}.tar.gz
+Source:         https://github.com/elkowar/eww/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  gcc
 
