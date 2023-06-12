@@ -68,9 +68,6 @@ Source0:        https://gitlab.freedesktop.org/asahi/mesa/-/archive/%{git_tag}/m
 # src/gallium/auxiliary/postprocess/pp_mlaa* have an ... interestingly worded license.
 # Source1 contains email correspondence clarifying the license terms.
 # Fedora opts to ignore the optional part of clause 2 and treat that code as 2 clause BSD.
-Source1:        Mesa-MLAA-License-Clarification-Email.txt
-
-Patch10:        gnome-shell-glthread-disable.patch
 
 BuildRequires:  meson >= 1.0.0
 BuildRequires:  gcc
