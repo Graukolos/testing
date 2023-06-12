@@ -334,7 +334,6 @@ The drivers with support for the Vulkan API.
 
 %prep
 %autosetup -n %{name}-%{git_tag} -p1
-cp %{SOURCE1} docs/
 
 %build
 # ensure standard Rust compiler flags are set
