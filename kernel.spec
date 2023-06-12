@@ -581,6 +581,7 @@ Summary: The Linux kernel
 %define kernel_prereq  coreutils, systemd >= 203-2, /usr/bin/kernel-install
 %define initrd_prereq  dracut >= 027
 
+SOURCE0: https://github.com/AsahiLinux/linux/archive/refs/tags/asahi-6.3-6.tar.gz
 
 Name: %{package_name}
 License: GPLv2 and Redistributable, no modification permitted
