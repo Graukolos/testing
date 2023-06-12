@@ -54,7 +54,7 @@
 
 %global asahi_mesa_ver 20230606
 %global git_tag asahi-%{asahi_mesa_ver}
-%global basever 23.1.0
+%global basever 23.2.0
 %global ver %{basever}-asahipre%{asahi_mesa_ver}
 
 Name:           mesa
