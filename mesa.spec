@@ -52,7 +52,7 @@
 
 %global vulkan_drivers swrast%{?base_vulkan}%{?platform_vulkan}
 
-%global asahi_mesa_ver 20230606
+%global asahi_mesa_ver 20230615
 %global git_tag asahi-%{asahi_mesa_ver}
 %global basever 23.2.0
 %global ver %{basever}-asahipre%{asahi_mesa_ver}
